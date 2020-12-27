@@ -1,0 +1,24 @@
+#homework-2 (user identification pr.)
+
+counter = 0
+list = ["name, last_name, age, birth_year"]
+
+while True:
+    name = input("\nPlease enter your name:")
+    last_name = input("Enter your surname:")
+    age = int(input("How old are you?:"))
+    birth_year = input("Date of birth year?:")
+    cevap = input("\nAnother User?: Pres [y] for yes , pres [n] for no:")
+    counter += 1
+
+    if cevap == ("y"):
+      continue
+    else:
+      break
+for i in range(counter):
+
+  print("\nFirst name:{}\nLast name:{}\nAge:{}\nBirth year:{}\n".format(name, last_name, age, birth_year(i)))
+  if age<18:
+    print("You can not go out because it is too dangerous!")
+  else:
+    print("You can go out to the street.")
