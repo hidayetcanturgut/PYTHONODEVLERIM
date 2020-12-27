@@ -1,0 +1,15 @@
+#homework-1 (taking 5 values from the user)
+
+ad_soyad = str(input("Adınızı ve soyadınızı giriniz:"))
+yas = int(input("Yaşınızı giriniz:"))
+memleket = input("Nerelisiniz:")
+renk = input("Sevilen renk:")
+adres = input("Yaşadığınız şehir:")
+
+print(type(ad_soyad))
+print(type(yas))
+print(type(memleket))
+print(type(renk))
+print(type(adres))
+
+print(f"Merhaba {ad_soyad.capitalize()}\nGirdiğiniz bilgilere göre {yas} yaşındasın, {memleket.capitalize()}lısın, {renk} rengini seviyorsun ve {adres.capitalize()} ilinde ikamet ediyorsun." )
